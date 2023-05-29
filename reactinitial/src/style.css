@@ -1,7 +1,46 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 App {
   font-family: arial;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.loading {
+  animation: growandshrink 2s infinite;
+}
+
+@keyframes growandshrink {
+  0% {
+    font-size: 12px;
+    color: black;
+  }
+
+  50% {
+    font-size: 20px;
+    color: red;
+  }
+
+  100% {
+    font-size: 12px;
+    color: black;
+  }
+}
+
